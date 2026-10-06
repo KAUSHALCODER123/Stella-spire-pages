@@ -73,35 +73,35 @@
         <svg viewBox="0 0 440 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-visual-title">
           <title id="hero-visual-title">Stellaspire’s search approach: the mandate, the search, the right fit</title>
 
-          <g fill="none" stroke="#dcd7ea" stroke-width="1">
+          <g class="orbit orbit--outer" fill="none" stroke="#dcd7ea" stroke-width="1">
             <circle cx="330" cy="132" r="96"/>
             <circle cx="330" cy="132" r="144"/>
             <circle cx="330" cy="132" r="192"/>
           </g>
-          <circle cx="330" cy="132" r="48" fill="none" stroke="#6050a0" stroke-width="1.5"/>
-          <g stroke="#6050a0" stroke-width="2" stroke-linecap="round">
+          <circle class="orbit orbit--core" cx="330" cy="132" r="48" fill="none" stroke="#6050a0" stroke-width="1.5"/>
+          <g class="orbit orbit--mark" stroke="#6050a0" stroke-width="2" stroke-linecap="round">
             <line x1="330" y1="110" x2="330" y2="154"/>
             <line x1="311" y1="121" x2="349" y2="143"/>
             <line x1="311" y1="143" x2="349" y2="121"/>
           </g>
-          <circle cx="403" cy="70" r="5" fill="#6050a0"/>
-          <circle cx="262" cy="200" r="5" fill="#90d0e0"/>
+          <circle class="spark spark--violet" cx="403" cy="70" r="5" fill="#6050a0"/>
+          <circle class="spark spark--aqua" cx="262" cy="200" r="5" fill="#90d0e0"/>
 
-          <g font-family="Georgia, Times, serif" fill="#211a35">
+          <g class="search-steps" font-family="Georgia, Times, serif" fill="#211a35">
             <line x1="32" y1="336" x2="408" y2="336" stroke="#dcd7ea"/>
-            <line x1="32" y1="336" x2="96" y2="336" stroke="#6050a0" stroke-width="2"/>
+            <line class="step-line" x1="32" y1="336" x2="96" y2="336" stroke="#6050a0" stroke-width="2"/>
             <text x="32" y="372" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6050a0">01</text>
             <text x="72" y="372" font-size="26">The mandate</text>
             <text x="72" y="396" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#565166">Business context and required capability</text>
 
             <line x1="32" y1="416" x2="408" y2="416" stroke="#dcd7ea"/>
-            <line x1="32" y1="416" x2="96" y2="416" stroke="#6050a0" stroke-width="2"/>
+            <line class="step-line" x1="32" y1="416" x2="96" y2="416" stroke="#6050a0" stroke-width="2"/>
             <text x="32" y="452" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6050a0">02</text>
             <text x="72" y="452" font-size="26">The search</text>
             <text x="72" y="476" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#565166">A focused map of the market</text>
 
             <line x1="32" y1="496" x2="408" y2="496" stroke="#dcd7ea"/>
-            <line x1="32" y1="496" x2="96" y2="496" stroke="#6050a0" stroke-width="2"/>
+            <line class="step-line" x1="32" y1="496" x2="96" y2="496" stroke="#6050a0" stroke-width="2"/>
             <text x="32" y="532" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6050a0">03</text>
             <text x="72" y="532" font-size="26">The right fit</text>
             <text x="72" y="556" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#565166">Capability, motivation and availability</text>
@@ -116,18 +116,32 @@
     <div class="container">
       <h2 id="trust-heading" class="trust-title">Trusted by growing companies and global teams.</h2>
 
-      <!-- Static row, no carousel. Logos render in muted greyscale at equal size.
-           CONFIRM written permission for each client before publishing. -->
-      <ul class="logo-row">
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/67489dec0b14ba9fcebd4d61_Bigbasket.png" alt="BigBasket" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6748806ccc560e96938ec105_carefi-1.svg" alt="Carefi" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6748a208cf00ee0396d28d0c_Metalbook%20(1).png" alt="Metalbook" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/67489aa867156aa68a06cd41_Think-AI-Logo.png" alt="Think AI" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c744153362eed218e4ed_SigIQ.png" alt="SigIQ" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/674899d3ba6e79ed05100a92_Arcana.png" alt="Arcana" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c6bc87212fb826ff65a9_Bharat_Forge.png" alt="Bharat Forge" loading="lazy"></li>
-        <li><img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c79ac12358857784b824_BizAcuity.png" alt="BizAcuity" loading="lazy"></li>
-      </ul>
+      <!-- The duplicated group creates a seamless loop while the first group remains
+           available to assistive technology. -->
+      <div class="logo-marquee" aria-label="Selected clients">
+        <ul class="logo-track">
+          <li class="logo-group">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/67489dec0b14ba9fcebd4d61_Bigbasket.png" alt="BigBasket" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6748806ccc560e96938ec105_carefi-1.svg" alt="Carefi" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6748a208cf00ee0396d28d0c_Metalbook%20(1).png" alt="Metalbook" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/67489aa867156aa68a06cd41_Think-AI-Logo.png" alt="Think AI" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c744153362eed218e4ed_SigIQ.png" alt="SigIQ" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/674899d3ba6e79ed05100a92_Arcana.png" alt="Arcana" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c6bc87212fb826ff65a9_Bharat_Forge.png" alt="Bharat Forge" loading="lazy">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c79ac12358857784b824_BizAcuity.png" alt="BizAcuity" loading="lazy">
+          </li>
+          <li class="logo-group" aria-hidden="true">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/67489dec0b14ba9fcebd4d61_Bigbasket.png" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6748806ccc560e96938ec105_carefi-1.svg" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6748a208cf00ee0396d28d0c_Metalbook%20(1).png" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/67489aa867156aa68a06cd41_Think-AI-Logo.png" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c744153362eed218e4ed_SigIQ.png" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/674899d3ba6e79ed05100a92_Arcana.png" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c6bc87212fb826ff65a9_Bharat_Forge.png" alt="">
+            <img src="https://cdn.prod.website-files.com/66a5fdf6d0c2ac84ca88fe93/6890c79ac12358857784b824_BizAcuity.png" alt="">
+          </li>
+        </ul>
+      </div>
 
       <!-- CONFIRM all three figures with Stellaspire before publishing. -->
       <ul class="results">
