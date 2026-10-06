@@ -67,44 +67,76 @@
         </div>
       </div>
 
-      <!-- Brand-led visual: line work, type and Stellaspire colours. Swap for an original
-           photograph (leadership discussion, collaboration) if one becomes available. -->
+      <!-- Brand visual: a star map. Stellaspire = star + aspire, so each of the three
+           specialisms is a star, joined into one constellation, with the real roles
+           Stellaspire hires for listed underneath. -->
       <div class="hero-visual">
         <svg viewBox="0 0 440 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-visual-title">
-          <title id="hero-visual-title">Stellaspire’s search approach: the mandate, the search, the right fit</title>
+          <title id="hero-visual-title">Stellaspire’s three specialisms drawn as a constellation: finance and leadership, data and analytics, and GCC hiring</title>
 
-          <g class="orbit orbit--outer" fill="none" stroke="#dcd7ea" stroke-width="1">
-            <circle cx="330" cy="132" r="96"/>
-            <circle cx="330" cy="132" r="144"/>
-            <circle cx="330" cy="132" r="192"/>
+          <g class="constellation-stars" fill="#dcd7ea">
+            <circle cx="40" cy="62" r="1.8"/>
+            <circle cx="196" cy="38" r="1.8"/>
+            <circle cx="290" cy="170" r="1.8"/>
+            <circle cx="62" cy="236" r="1.8"/>
+            <circle cx="404" cy="214" r="1.8"/>
+            <circle cx="168" cy="292" r="1.8"/>
+            <circle cx="392" cy="292" r="1.8"/>
+            <circle cx="282" cy="52" r="1.8"/>
+            <circle cx="52" cy="150" r="1.8"/>
+            <circle cx="196" cy="168" r="1.8"/>
+            <circle cx="412" cy="140" r="1.8"/>
           </g>
-          <circle class="orbit orbit--core" cx="330" cy="132" r="48" fill="none" stroke="#6050a0" stroke-width="1.5"/>
-          <g class="orbit orbit--mark" stroke="#6050a0" stroke-width="2" stroke-linecap="round">
-            <line x1="330" y1="110" x2="330" y2="154"/>
-            <line x1="311" y1="121" x2="349" y2="143"/>
-            <line x1="311" y1="143" x2="349" y2="121"/>
-          </g>
-          <circle class="spark spark--violet" cx="403" cy="70" r="5" fill="#6050a0"/>
-          <circle class="spark spark--aqua" cx="262" cy="200" r="5" fill="#90d0e0"/>
 
-          <g class="search-steps" font-family="Georgia, Times, serif" fill="#211a35">
+          <g class="constellation-lines" stroke="#b6accd" stroke-width="1" fill="none">
+            <line x1="110" y1="130" x2="240" y2="225"/>
+            <line x1="240" y1="225" x2="350" y2="95"/>
+            <line x1="110" y1="130" x2="350" y2="95" stroke-dasharray="3 6"/>
+          </g>
+
+          <g class="constellation-star constellation-star--violet" stroke="#6050a0" stroke-width="2" stroke-linecap="round">
+            <circle cx="110" cy="130" r="22" fill="#fff" stroke-width="1.2"/>
+            <line x1="110" y1="119" x2="110" y2="141"/>
+            <line x1="100.5" y1="124.5" x2="119.5" y2="135.5"/>
+            <line x1="100.5" y1="135.5" x2="119.5" y2="124.5"/>
+          </g>
+          <g class="constellation-star constellation-star--aqua" stroke="#90d0e0" stroke-width="2" stroke-linecap="round">
+            <circle cx="240" cy="225" r="22" fill="#fff" stroke-width="1.2"/>
+            <line x1="240" y1="214" x2="240" y2="236"/>
+            <line x1="230.5" y1="219.5" x2="249.5" y2="230.5"/>
+            <line x1="230.5" y1="230.5" x2="249.5" y2="219.5"/>
+          </g>
+          <g class="constellation-star constellation-star--ink" stroke="#211a35" stroke-width="2" stroke-linecap="round">
+            <circle cx="350" cy="95" r="22" fill="#fff" stroke-width="1.2"/>
+            <line x1="350" y1="84" x2="350" y2="106"/>
+            <line x1="340.5" y1="89.5" x2="359.5" y2="100.5"/>
+            <line x1="340.5" y1="100.5" x2="359.5" y2="89.5"/>
+          </g>
+
+          <g class="constellation-labels" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.6" fill="#565166" text-anchor="middle">
+            <text x="110" y="172">FINANCE</text>
+            <text x="240" y="267">DATA</text>
+            <text x="350" y="137">GCC</text>
+          </g>
+
+          <g class="constellation-copy" fill="#211a35">
             <line x1="32" y1="336" x2="408" y2="336" stroke="#dcd7ea"/>
-            <line class="step-line" x1="32" y1="336" x2="96" y2="336" stroke="#6050a0" stroke-width="2"/>
-            <text x="32" y="372" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6050a0">01</text>
-            <text x="72" y="372" font-size="26">The mandate</text>
-            <text x="72" y="396" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#565166">Business context and required capability</text>
+            <line class="constellation-progress" x1="32" y1="336" x2="96" y2="336" stroke="#6050a0" stroke-width="2"/>
+            <circle cx="40" cy="362" r="5" fill="#6050a0"/>
+            <text x="72" y="372" font-family="Georgia, Times, serif" font-size="26">Finance &amp; Leadership</text>
+            <text x="72" y="396" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#565166">CFOs, finance heads, controllers, FP&amp;A</text>
 
             <line x1="32" y1="416" x2="408" y2="416" stroke="#dcd7ea"/>
-            <line class="step-line" x1="32" y1="416" x2="96" y2="416" stroke="#6050a0" stroke-width="2"/>
-            <text x="32" y="452" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6050a0">02</text>
-            <text x="72" y="452" font-size="26">The search</text>
-            <text x="72" y="476" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#565166">A focused map of the market</text>
+            <line class="constellation-progress" x1="32" y1="416" x2="96" y2="416" stroke="#90d0e0" stroke-width="2"/>
+            <circle cx="40" cy="442" r="5" fill="#90d0e0"/>
+            <text x="72" y="452" font-family="Georgia, Times, serif" font-size="26">Data &amp; Analytics</text>
+            <text x="72" y="476" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#565166">Analytics leaders, data scientists, engineers</text>
 
             <line x1="32" y1="496" x2="408" y2="496" stroke="#dcd7ea"/>
-            <line class="step-line" x1="32" y1="496" x2="96" y2="496" stroke="#6050a0" stroke-width="2"/>
-            <text x="32" y="532" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6050a0">03</text>
-            <text x="72" y="532" font-size="26">The right fit</text>
-            <text x="72" y="556" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#565166">Capability, motivation and availability</text>
+            <line class="constellation-progress" x1="32" y1="496" x2="96" y2="496" stroke="#211a35" stroke-width="2"/>
+            <circle cx="40" cy="522" r="5" fill="#211a35"/>
+            <text x="72" y="532" font-family="Georgia, Times, serif" font-size="26">GCC Hiring</text>
+            <text x="72" y="556" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#565166">Specialist teams across India</text>
           </g>
         </svg>
       </div>
